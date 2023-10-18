@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Conversão de dados
+        // 1 texto para número inteiro
+        // 2 texto para númeror real 
+        // 3 numero para texto
+
+
+        //Obter notas
+        let nota1 = parseFloat(prompt("Informe a primeira nota"))
+        let nota2 = parseFloat(prompt("Informe a segunda nota"))
+
+        //Realizar cálculo de média
+        let media = (nota1 + nota2) / 2;
+
+        //condicional
+        if(media >= 7){
+            document.write("Aprovado")
+        } else{
+            document.write("Reprovado.")
+        }
+
+        //ou usar o operador ternário para realizar a condicional
+        document.write(media >= 7 ? `Aprovado(a) com ${media.toFixed(2)}` : `Reprovado(a) com ${media.toFixed(2)}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Variáveis
+        var nome = "Ralf";
+        var idade = 33;
+
+        //let pode alterar temporariamente um valor de variavel.
+        {
+            let nome = "Leticia"
+            let idade = 31
+            document.write(nome);
+            document.write(idade);
+        } 
+
+        //Constantes - não é possível sobrepor ou alterar.
+        const cidade = "Curitiba";
+
+        
+        
+        //concatenação
+        //document.write("Boa noite " + nome + ", você tem " + idade + " anos.");
+        
+        //template String
+        document.write(`Boa noite ${nome}, você tem ${idade} anos`)
+
+    </script>
+</body>
+</html>
